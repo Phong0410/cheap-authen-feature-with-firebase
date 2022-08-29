@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
-import { query, collection, getDocs, where } from "firebase/firestore";
+import { query, collection, getDocs, where, doc } from "firebase/firestore";
 import { auth, db, logout } from "../firebase";
 import "./index.css";
 
@@ -12,10 +12,9 @@ const Dashboard = () => {
   const fetchUserName = async () => {
     try {
       const q = query(collection(db, "users"), where("uid", "==", user?.uid));
-      const doc = await getDocs(q);
-      const userName =
-        doc.docs[0]._document.data.value.mapValue.fields.name.stringValue; // wtf????
-      setname(userName);
+      const res = await getDocs(q);
+      const data = res.docs[0].data();
+      setname(data.name);
     } catch (error) {
       console.log(error);
       alert(error.message);
