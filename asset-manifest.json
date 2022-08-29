@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cheap-authen-feature-with-firebase/static/css/main.5b32af45.css",
-    "main.js": "/cheap-authen-feature-with-firebase/static/js/main.12230cb7.js",
+    "main.js": "/cheap-authen-feature-with-firebase/static/js/main.640561a3.js",
     "static/js/787.f338f33c.chunk.js": "/cheap-authen-feature-with-firebase/static/js/787.f338f33c.chunk.js",
     "index.html": "/cheap-authen-feature-with-firebase/index.html",
     "main.5b32af45.css.map": "/cheap-authen-feature-with-firebase/static/css/main.5b32af45.css.map",
-    "main.12230cb7.js.map": "/cheap-authen-feature-with-firebase/static/js/main.12230cb7.js.map",
+    "main.640561a3.js.map": "/cheap-authen-feature-with-firebase/static/js/main.640561a3.js.map",
     "787.f338f33c.chunk.js.map": "/cheap-authen-feature-with-firebase/static/js/787.f338f33c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b32af45.css",
-    "static/js/main.12230cb7.js"
+    "static/js/main.640561a3.js"
   ]
 }
